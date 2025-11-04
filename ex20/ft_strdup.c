@@ -30,7 +30,7 @@ char	*ft_strdup(char *src)
 	i = 0;
 	if (!src)
 		return (NULL);
-	array = (char *) malloc(sizeof(char) * ft_strlen(src));
+	array = (char *) malloc(sizeof(char) * ft_strlen(src) + 1);
 	while (src[i])
 	{
 		array[i] = src[i];
